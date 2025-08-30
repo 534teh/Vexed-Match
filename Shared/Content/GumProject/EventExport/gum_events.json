@@ -1,0 +1,902 @@
+{
+  "UserEvents": {
+    "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b": [
+      {
+        "NewName": "MainMenu",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 0,
+        "TimestampUtc": "2025-08-25T15:35:07.8706772Z"
+      },
+      {
+        "NewName": "MainMenu.TextInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T15:35:51.4212253Z"
+      },
+      {
+        "NewName": "MainMenu.TextInstance1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T17:21:53.9177962Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu.Text TextInstance1 in MainMenu",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2025-08-25T17:22:29.0282838Z"
+      },
+      {
+        "NewName": "SpriteScreen",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 0,
+        "TimestampUtc": "2025-08-25T17:29:05.5623551Z"
+      },
+      {
+        "NewName": "SpriteScreen.SpriteInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T17:29:13.3860896Z"
+      },
+      {
+        "NewName": "Button",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2025-08-25T17:50:29.0266496Z"
+      },
+      {
+        "NewName": "Button (Container).RectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T17:50:46.6312845Z"
+      },
+      {
+        "NewName": "Button (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T17:50:48.6396306Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Button (Container).Rectangle RectangleInstance in Button (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2025-08-25T17:50:59.7891673Z"
+      },
+      {
+        "NewName": "Button (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T17:51:01.4115754Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Button (Container).Text TextInstance in Button (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2025-08-25T17:58:50.7084815Z"
+      },
+      {
+        "NewName": "Button (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T17:58:51.8490676Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu.Text TextInstance in MainMenu",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2025-08-25T17:59:34.7022693Z"
+      },
+      {
+        "NewName": "MainMenu.ButtonInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T17:59:48.5748497Z"
+      },
+      {
+        "NewName": "MainMenu.ButtonInstance1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T17:59:50.469256Z"
+      },
+      {
+        "NewName": "MainMenu.ButtonInstance2",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T17:59:52.1505375Z"
+      },
+      {
+        "NewName": "MeasurementDisplay",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2025-08-25T18:49:26.9241992Z"
+      },
+      {
+        "NewName": "MeasurementDisplay (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T18:50:07.9049818Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MeasurementDisplay (Container).Text TextInstance in MeasurementDisplay (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2025-08-25T18:50:15.779914Z"
+      },
+      {
+        "NewName": "MeasurementDisplay (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T18:50:19.5881525Z"
+      },
+      {
+        "NewName": "MeasurementDisplay (Container).TextInstance1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T18:50:22.9973264Z"
+      },
+      {
+        "NewName": "MeasurementDisplay (Container).ValueText",
+        "OldName": "MeasurementDisplay (Container).TextInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-25T18:50:37.2339349Z"
+      },
+      {
+        "NewName": "MeasurementDisplay (Container).UnitsDisplay",
+        "OldName": "MeasurementDisplay (Container).TextInstance1",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-25T18:50:42.6515509Z"
+      },
+      {
+        "NewName": "CategoryDemo",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2025-08-25T19:37:13.5156373Z"
+      },
+      {
+        "NewName": "CategoryDemo (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T19:38:24.4783767Z"
+      },
+      {
+        "NewName": "CategoryDemoScreen",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 0,
+        "TimestampUtc": "2025-08-25T19:39:48.7911287Z"
+      },
+      {
+        "NewName": "CategoryDemoScreen.CategoryDemoInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T19:39:52.8429727Z"
+      },
+      {
+        "NewName": "Menu",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 0,
+        "TimestampUtc": "2025-08-25T20:09:59.8003848Z"
+      },
+      {
+        "NewName": "InGame",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 0,
+        "TimestampUtc": "2025-08-25T20:10:17.7654284Z"
+      },
+      {
+        "NewName": "Button",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2025-08-25T20:11:07.8135893Z"
+      },
+      {
+        "NewName": "Button (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T20:11:14.9962126Z"
+      },
+      {
+        "NewName": "Button (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T20:11:17.8329275Z"
+      },
+      {
+        "NewName": "TextButton",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2025-08-25T20:12:46.6247971Z"
+      },
+      {
+        "NewName": "TextButton (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T20:12:52.5162238Z"
+      },
+      {
+        "NewName": "TextButton (Container).RectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T20:13:08.4098064Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "TextButton",
+        "ElementType": "Components",
+        "EventType": 1,
+        "TimestampUtc": "2025-08-25T20:17:01.5298905Z"
+      },
+      {
+        "NewName": "OptionMenu",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2025-08-25T20:17:21.4199341Z"
+      },
+      {
+        "NewName": "OptionsContainer",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2025-08-25T20:18:13.1615226Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "OptionMenu",
+        "ElementType": "Components",
+        "EventType": 1,
+        "TimestampUtc": "2025-08-25T20:18:19.7210588Z"
+      },
+      {
+        "NewName": "MainMenu",
+        "OldName": "Menu",
+        "ElementType": "Screens",
+        "EventType": 2,
+        "TimestampUtc": "2025-08-25T21:50:21.0488625Z"
+      },
+      {
+        "NewName": "MainMenu.OptionsContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T21:50:26.8513537Z"
+      },
+      {
+        "NewName": "MainMenu.TextInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T21:50:45.3675747Z"
+      },
+      {
+        "NewName": "MainMenu.TextInstance1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T21:50:53.0916152Z"
+      },
+      {
+        "NewName": "MainMenu.TextInstance2",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T21:50:55.2902025Z"
+      },
+      {
+        "NewName": "MainMenu.TextInstance3",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T21:50:57.4109439Z"
+      },
+      {
+        "NewName": "MainMenu.Settings",
+        "OldName": "MainMenu.TextInstance1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-25T21:54:30.3828724Z"
+      },
+      {
+        "NewName": "MainMenu.Play",
+        "OldName": "MainMenu.TextInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-25T21:54:48.4517487Z"
+      },
+      {
+        "NewName": "MainMenu.Exit",
+        "OldName": "MainMenu.TextInstance2",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-25T21:55:01.8804129Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu.Text TextInstance3 in MainMenu",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2025-08-25T21:55:04.2850099Z"
+      },
+      {
+        "NewName": "MainMenu.Singleplayer",
+        "OldName": "MainMenu.Play",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-25T21:56:50.6498783Z"
+      },
+      {
+        "NewName": "MainMenu.TextInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T21:57:19.2704833Z"
+      },
+      {
+        "NewName": "MainMenu.Multiplayer",
+        "OldName": "MainMenu.TextInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-25T21:57:36.8645651Z"
+      },
+      {
+        "NewName": "MainMenu.TextInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T22:04:19.5204461Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu.Text TextInstance in MainMenu",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2025-08-25T22:04:59.597002Z"
+      },
+      {
+        "NewName": "MainMenu.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T22:22:38.0293863Z"
+      },
+      {
+        "NewName": "MainMenu.MainContainer",
+        "OldName": "MainMenu.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-25T22:22:54.1062549Z"
+      },
+      {
+        "NewName": "MainMenu.OptionsContainer",
+        "OldName": "MainMenu.OptionsContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-25T22:23:35.8035492Z"
+      },
+      {
+        "NewName": "MainMenu.New Game",
+        "OldName": "MainMenu.Singleplayer",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-25T22:25:33.6359827Z"
+      },
+      {
+        "NewName": "MainMenu.Load Game",
+        "OldName": "MainMenu.Multiplayer",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-25T22:25:43.5775916Z"
+      },
+      {
+        "NewName": "MainMenu.OptionsContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-25T22:47:24.7355252Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu.OptionsContainer OptionsContainerInstance in MainMenu",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2025-08-25T22:47:40.8663611Z"
+      },
+      {
+        "NewName": "MainMenu.OptionsContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T08:34:34.6421523Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu.OptionsContainer OptionsContainerInstance in MainMenu",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2025-08-26T08:34:46.0329949Z"
+      },
+      {
+        "NewName": "MainMenu.ButtonInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T08:49:20.9884451Z"
+      },
+      {
+        "NewName": "MainMenu.ButtonInstance1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T08:51:41.7733872Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu.Text New Game in MainMenu",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2025-08-26T08:51:59.524897Z"
+      },
+      {
+        "NewName": "MainMenu.New Game",
+        "OldName": "MainMenu.ButtonInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-26T08:52:03.4893543Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu.Text Load Game in MainMenu",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2025-08-26T08:52:15.3020917Z"
+      },
+      {
+        "NewName": "MainMenu.Load Game",
+        "OldName": "MainMenu.ButtonInstance1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-26T08:52:22.8271433Z"
+      },
+      {
+        "NewName": "MainMenu.SpriteInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T08:55:08.04376Z"
+      },
+      {
+        "NewName": "InGame.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T09:00:05.69038Z"
+      },
+      {
+        "NewName": "InGame.MainContainer",
+        "OldName": "InGame.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-26T09:00:20.9258473Z"
+      },
+      {
+        "NewName": "InGame.SpriteInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T09:00:22.1709177Z"
+      },
+      {
+        "NewName": "InGame.SpriteInstance1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T09:16:36.1119883Z"
+      },
+      {
+        "NewName": "InGame.TableSprite",
+        "OldName": "InGame.SpriteInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-26T09:22:13.014245Z"
+      },
+      {
+        "NewName": "InGame.BackgroundSprite",
+        "OldName": "InGame.SpriteInstance1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-26T09:22:23.9209056Z"
+      },
+      {
+        "NewName": "InGame.RectangleInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T09:40:12.1528589Z"
+      },
+      {
+        "NewName": "PlayerProfileIcon",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2025-08-26T09:40:36.7835449Z"
+      },
+      {
+        "NewName": "PlayerProfileIcon (Container).RectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T09:40:42.5311098Z"
+      },
+      {
+        "NewName": "PlayerProfile",
+        "OldName": "PlayerProfileIcon",
+        "ElementType": "Components",
+        "EventType": 2,
+        "TimestampUtc": "2025-08-26T09:45:01.9886077Z"
+      },
+      {
+        "NewName": "PlayerProfile (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T09:45:07.1383819Z"
+      },
+      {
+        "NewName": "PlayerProfile (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T09:45:09.9517965Z"
+      },
+      {
+        "NewName": "PlayerProfile (Container).Frame",
+        "OldName": "PlayerProfile (Container).RectangleInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-26T09:45:17.1851056Z"
+      },
+      {
+        "NewName": "PlayerProfile (Container).Icon",
+        "OldName": "PlayerProfile (Container).SpriteInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-26T09:45:21.4731219Z"
+      },
+      {
+        "NewName": "PlayerProfile (Container).UserName",
+        "OldName": "PlayerProfile (Container).TextInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-26T09:45:35.4210153Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "InGame.Rectangle RectangleInstance in InGame",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2025-08-26T10:21:30.2188978Z"
+      },
+      {
+        "NewName": "InGame.PlayerProfileInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T10:21:32.992555Z"
+      },
+      {
+        "NewName": "InGame.PlayerProfileInstance1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T10:21:36.76888Z"
+      },
+      {
+        "NewName": "InGame.PlayerProfileInstance2",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T10:21:38.5958738Z"
+      },
+      {
+        "NewName": "InGame.PlayerProfileInstance3",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T10:21:40.8952123Z"
+      },
+      {
+        "NewName": "InGame.Player 1",
+        "OldName": "InGame.PlayerProfileInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-26T10:22:47.4325664Z"
+      },
+      {
+        "NewName": "InGame.Player 2",
+        "OldName": "InGame.PlayerProfileInstance1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-26T10:24:14.0096219Z"
+      },
+      {
+        "NewName": "InGame.Player 3",
+        "OldName": "InGame.PlayerProfileInstance2",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-26T10:24:16.5374224Z"
+      },
+      {
+        "NewName": "InGame.Player 4",
+        "OldName": "InGame.PlayerProfileInstance3",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-26T10:24:22.6409195Z"
+      },
+      {
+        "NewName": "CardContainer",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2025-08-26T10:33:28.948858Z"
+      },
+      {
+        "NewName": "InGame.Player 5",
+        "OldName": "InGame.Player 4",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-26T10:45:33.2226705Z"
+      },
+      {
+        "NewName": "InGame.Player 4",
+        "OldName": "InGame.Player 3",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-26T10:45:47.9217685Z"
+      },
+      {
+        "NewName": "InGame.Player 3",
+        "OldName": "InGame.Player 2",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-26T10:45:57.248542Z"
+      },
+      {
+        "NewName": "InGame.Player 2",
+        "OldName": "InGame.Player 3",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-26T10:46:00.3737661Z"
+      },
+      {
+        "NewName": "InGame.Player 3",
+        "OldName": "InGame.Player 2",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-26T10:46:26.1385795Z"
+      },
+      {
+        "NewName": "InGame.Player 2",
+        "OldName": "InGame.Player 1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-26T10:46:34.114941Z"
+      },
+      {
+        "NewName": "InGame.Player 1",
+        "OldName": "InGame.Player 5",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-26T10:46:45.4929604Z"
+      },
+      {
+        "NewName": "PlayerHand",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2025-08-26T10:48:08.5649135Z"
+      },
+      {
+        "NewName": "PlayerProfile (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T11:11:58.8555434Z"
+      },
+      {
+        "NewName": "PlayerProfile (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T11:12:03.2197632Z"
+      },
+      {
+        "NewName": "CardContainer (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T11:18:49.138956Z"
+      },
+      {
+        "NewName": "CardContainer (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T11:18:52.8615101Z"
+      },
+      {
+        "NewName": "PlayerProfile (Container).CardContainerInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T11:19:16.9152779Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "PlayerProfile (Container).CardContainer CardContainerInstance in PlayerProfile (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2025-08-26T11:19:34.1399271Z"
+      },
+      {
+        "NewName": "CardContainer (Container).CardCount",
+        "OldName": "CardContainer (Container).TextInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-26T11:19:55.4420695Z"
+      },
+      {
+        "NewName": "CardContainer (Container).CardFrame",
+        "OldName": "CardContainer (Container).ColoredRectangleInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-26T11:20:03.4689633Z"
+      },
+      {
+        "NewName": "CardCounter",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2025-08-26T11:25:08.8530819Z"
+      },
+      {
+        "NewName": "CardFrame",
+        "OldName": "CardCounter",
+        "ElementType": "Components",
+        "EventType": 2,
+        "TimestampUtc": "2025-08-26T11:25:34.1528214Z"
+      },
+      {
+        "NewName": "CardCounter",
+        "OldName": "CardFrame",
+        "ElementType": "Components",
+        "EventType": 2,
+        "TimestampUtc": "2025-08-26T11:26:00.9963956Z"
+      },
+      {
+        "NewName": "PlayerProfile (Container).CardFrame",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T11:26:28.4988999Z"
+      },
+      {
+        "NewName": "PlayerProfile (Container).CardCount",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T11:26:41.5032267Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "PlayerProfile (Container).Text CardCount in PlayerProfile (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2025-08-26T11:27:02.7545177Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "PlayerProfile (Container).ColoredRectangle CardFrame in PlayerProfile (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2025-08-26T11:27:04.4421644Z"
+      },
+      {
+        "NewName": "CardCounter (ColoredRectangle).CardCount",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T11:27:28.9584571Z"
+      },
+      {
+        "NewName": "PlayerProfile (Container).CardCounterInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T11:27:33.6910894Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "PlayerProfile (Container).Text TextInstance in PlayerProfile (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2025-08-26T11:28:09.7348315Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "PlayerProfile (Container).ColoredRectangle ColoredRectangleInstance in PlayerProfile (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2025-08-26T11:28:12.7685866Z"
+      },
+      {
+        "NewName": "PlayerProfile (Container).RemainingCards",
+        "OldName": "PlayerProfile (Container).CardCounterInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2025-08-26T11:28:24.5443003Z"
+      },
+      {
+        "NewName": "InGame.PlayerProfileInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T11:29:29.8187224Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "InGame.PlayerProfile PlayerProfileInstance in InGame",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2025-08-26T11:29:40.134969Z"
+      },
+      {
+        "NewName": "InGame.PlayerProfileInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2025-08-26T11:31:14.1530123Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "InGame.Sprite TableSprite in InGame",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2025-08-26T19:48:22.0686454Z"
+      }
+    ]
+  }
+}
