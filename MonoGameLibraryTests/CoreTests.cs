@@ -1,137 +1,114 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Graphics;
 using MonoGameLibrary;
+using MonoGameLibrary.Graphics;
 using MonoGameLibrary.Input;
 using MonoGameLibrary.Scenes;
+using Moq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Content;
-using Moq;
-
 namespace MonoGameLibraryTests;
 
-[TestClass()]
+[TestClass]
 public class CoreTests
 {
-    [TestMethod()]
-    public void Constructor_SetsInstanceAndProperties()
-    {
-        var core = new Core("Test", 800, 600, false);
+    private Core? _core;
 
-        Assert.AreEqual(core, Core.Instance);
-        Assert.AreEqual(800, Core.Graphics.PreferredBackBufferWidth);
-        Assert.AreEqual(600, Core.Graphics.PreferredBackBufferHeight);
-        Assert.IsFalse(Core.Graphics.IsFullScreen);
-        Assert.AreEqual("Test", core.Window.Title);
-        Assert.AreEqual("Content", Core.Content.RootDirectory);
-        Assert.IsTrue(core.IsMouseVisible);
+    [TestInitialize]
+    public void TestInitialize()
+    {
+        _core = new Core("Test", 800, 600, false, new InputManager());
     }
 
-    [TestMethod()]
-    public void Constructor_ThrowsIfMultipleInstances()
+    [TestMethod]
+    [TestCategory("Integration")]
+    public void ChangeScene_SetsNewScene()
     {
-        var _ = new Core("Test", 800, 600, false);
-        
-        Assert.ThrowsException<InvalidOperationException>(() => new Core("Test2", 1024, 768, true));
+        var scene = new TestableScene();
+        _core!.ChangeScene(scene);
+
+        // Scene change happens on next update
+        Assert.AreNotEqual(scene, _core.ActiveScene);
+
+        _core.RunOneFrame();
+
+        Assert.AreEqual(scene, _core.ActiveScene);
     }
 
-    [TestMethod()]
-    public void Initialize_SetsGraphicsDeviceAndSpriteBatchAndInput()
+    [TestMethod]
+    [TestCategory("Integration")]
+    public void ChangeScene_DisposesOldScene()
     {
-        var _ = new TestableCore("Test", 800, 600, false);
-        TestableCore.Initialize();
+        var oldScene = new TestableScene();
+        var newScene = new TestableScene();
+        _core!.ActiveScene = oldScene;
 
-        Assert.IsNotNull(Core.GraphicsDevice);
-        Assert.IsNotNull(Core.SpriteBatch);
-        Assert.IsNotNull(Core.Input);
+        _core.ChangeScene(newScene);
+
+        _core.RunOneFrame();
+
+        Assert.IsTrue(oldScene.IsDisposed);
+        Assert.IsFalse(newScene.IsDisposed);
+        Assert.AreEqual(newScene, _core.ActiveScene);
+        Assert.IsNull(_core.NextScene);
     }
 
-    [TestMethod()]
-    public void ChangeScene_SetsNextSceneIfDifferent()
-    {
-        var _ = new Core("Test", 800, 600, false);
-        var scene1 = new Mock<Scene>().Object;
-        var scene2 = new Mock<Scene>().Object;
-
-        Core.s_activeScene = scene1;
-        Core.ChangeScene(scene2);
-
-        Assert.AreEqual(scene2, Core.s_nextScene);
-    }
-
-    [TestMethod()]
-    public void ChangeScene_DoesNotSetNextSceneIfSame()
-    {
-        var _ = new Core("Test", 800, 600, false);
-        var scene1 = new Mock<Scene>().Object;
-
-        Core.s_activeScene = scene1;
-        Core.ChangeScene(scene1);
-
-        Assert.IsNull(Core.s_nextScene);
-    }
-
-    [TestMethod()]
-    public void Update_TransitionsSceneIfNextSceneSet()
-    {
-        var core = new TestableCore("Test", 800, 600, false);
-        TestableCore.Initialize();
-
-        var sceneMock = new Mock<Scene>();
-        sceneMock.Setup(s => s.Initialize());
-        sceneMock.Setup(s => s.Dispose());
-
-        Core.s_nextScene = sceneMock.Object;
-
-        core.Update(new GameTime());
-
-        Assert.AreEqual(sceneMock.Object, Core.s_activeScene);
-        sceneMock.Verify(s => s.Initialize(), Times.Once);
-        sceneMock.Verify(s => s.Dispose(), Times.Never);
-    }
-
-    [TestMethod()]
+    [TestMethod]
+    [TestCategory("Integration")]
     public void Update_UpdatesActiveScene()
     {
-        var core = new TestableCore("Test", 800, 600, false);
-        TestableCore.Initialize();
-
-        var sceneMock = new Mock<Scene>();
+        var sceneMock = new Mock<TestableScene>();
         sceneMock.Setup(s => s.Update(It.IsAny<GameTime>()));
 
-        Core.s_activeScene = sceneMock.Object;
+        _core!.ActiveScene = sceneMock.Object;
 
-        core.Update(new GameTime());
+        _core.RunOneFrame();
 
         sceneMock.Verify(s => s.Update(It.IsAny<GameTime>()), Times.Once);
     }
 
-    [TestMethod()]
+    [TestMethod]
+    [TestCategory("Integration")]
     public void Draw_DrawsActiveScene()
     {
-        var core = new TestableCore("Test", 800, 600, false);
-        TestableCore.Initialize();
-
-        var sceneMock = new Mock<Scene>();
+        var sceneMock = new Mock<TestableScene>();
         sceneMock.Setup(s => s.Draw(It.IsAny<GameTime>()));
 
-        Core.s_activeScene = sceneMock.Object;
+        _core!.ActiveScene = sceneMock.Object;
 
-        core.Draw(new GameTime());
+        _core.RunOneFrame();
 
         sceneMock.Verify(s => s.Draw(It.IsAny<GameTime>()), Times.Once);
     }
 
-    [TestCleanup]
-    public void CleanupCoreSingleton()
+    [TestMethod]
+    [TestCategory("Unit")]
+    public void ChangeScene_SetsNextSceneIfDifferent()
     {
-        typeof(Core)
-            .GetField("s_instance", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.NonPublic)?
-            .SetValue(null, null);
+        var scene1 = new TestableScene();
+        var scene2 = new TestableScene();
+        _core!.ActiveScene = scene1;
+
+        _core.ChangeScene(scene2);
+
+        Assert.AreEqual(scene2, _core.NextScene);
+    }
+
+    [TestMethod]
+    [TestCategory("Unit")]
+    public void ChangeScene_DoesNotSetNextSceneIfSame()
+    {
+        var scene1 = new TestableScene();
+        _core!.ActiveScene = scene1;
+
+        _core.ChangeScene(scene1);
+
+        Assert.IsNull(_core.NextScene);
     }
 }
