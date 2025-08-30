@@ -12,7 +12,8 @@ namespace MonoGameLibraryTests.Input
     [TestClass()]
     public class InputManagerTests
     {
-        [TestMethod()]
+        [TestMethod]
+        [TestCategory("Unit")]
         public void InputManagerTest()
         {
             var inputManager = new InputManager();
