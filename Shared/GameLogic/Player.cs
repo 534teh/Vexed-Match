@@ -19,6 +19,7 @@ public class Player(string name, int playerId, int cardsLeft, string iconName, P
 
         CardsLeft = newCount;
     }
+
     public void UpdateStatus(PlayerStatus newStatus)
     {
         Status = newStatus;

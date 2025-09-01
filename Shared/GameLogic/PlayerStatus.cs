@@ -9,8 +9,4 @@ public class PlayerStatus
     public bool IsLocal { get; set; } = false;
     public bool IsAI { get; set; } = false;
     public bool IsOut { get; set; } = false;
-
-    public PlayerStatus()
-    {
-    }
 }

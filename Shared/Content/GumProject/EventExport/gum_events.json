@@ -896,6 +896,13 @@
         "ElementType": "Screens",
         "EventType": 6,
         "TimestampUtc": "2025-08-26T19:48:22.0686454Z"
+      },
+      {
+        "NewName": "TitleScreen",
+        "OldName": "MainMenu",
+        "ElementType": "Screens",
+        "EventType": 2,
+        "TimestampUtc": "2025-08-31T10:00:17.8790185Z"
       }
     ]
   }
