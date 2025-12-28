@@ -1,0 +1,23 @@
+# Build Output
+[Bb]in/
+[Oo]bj/
+
+# IDE (VS Code)
+.vscode/*
+
+# IDE (Visual Studio)
+.vs/
+*.user
+*.suo
+*.userprefs
+
+# MonoGame Specific
+**/Content/bin/
+**/Content/obj/
+
+# GumUI Specific 
+*.bak
+
+# OS System Files
+.DS_Store
+Thumbs.db
